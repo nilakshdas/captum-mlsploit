@@ -49,7 +49,7 @@ def get_integrated_gradients_attribution_with_prediction(model, image):
     tic = time.time()
     visualization = IntegratedGradients(model)
     attributions = visualization.attribute(
-        input_tensor, target=pred_label_idx, n_steps=50)
+        input_tensor, target=pred_label_idx, n_steps=5)
     attributions = attributions.squeeze().cpu().detach().numpy()
     attributions = np.transpose(attributions, (1, 2, 0))
     toc = time.time()
