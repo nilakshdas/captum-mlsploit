@@ -1,0 +1,27 @@
+{
+  "functions": [
+    {
+      "name": "IntegratedGradients",
+      "extensions": [
+        {
+          "extension": "jpg"
+        }
+      ],
+      "doctxt": "Integrated Gradients represents the integral of gradients with respect to an input along the path of a baseline to the input.",
+      "options": [
+        {
+          "name": "model",
+          "type": "enum",
+          "values": [
+            "vgg16",
+            "resnet18"
+          ],
+          "required": true,
+          "doctxt": "Pre-trained model to use for classification."
+        }
+      ]
+    }
+  ],
+  "doctxt": "Captum is an extensible library for deep learning model interpretability.",
+  "tagline": "Deep learning interpretability at your fingertips."
+}

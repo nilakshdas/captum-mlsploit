@@ -1,0 +1,10 @@
+
+{
+  "name": "IntegratedGradients",
+  "options": {
+    "model": "vgg16"
+  },
+  "num_files": 1,
+  "files": ["example.jpg"],
+  "tags": [{}]
+}
