@@ -4,11 +4,12 @@ VOLUME /mnt/input
 VOLUME /mnt/output
 
 # Install python dependencies
-ADD requirements.txt /
-RUN pip install -r /requirements.txt
+COPY requirements.txt /
+RUN pip install --ignore-installed \
+        -r /requirements.txt
 
 # Download pretrained weights
-ADD models.py /
+COPY models.py /
 RUN python /models.py
 
 COPY . /app

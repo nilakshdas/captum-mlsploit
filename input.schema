@@ -5,6 +5,9 @@
       "extensions": [
         {
           "extension": "jpg"
+        },
+        {
+          "extension": "db"
         }
       ],
       "doctxt": "Integrated Gradients represents the integral of gradients with respect to an input along the path of a baseline to the input.",
